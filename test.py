@@ -61,8 +61,8 @@ def estimate_density_map(img_root,gt_dmap_root,model_param_path,index):
 
 if __name__=="__main__":
     torch.backends.cudnn.enabled=False
-    img_root='./data/Shanghai_part_A/test_data/images'
-    gt_dmap_root='./data/Shanghai_part_A/test_data/ground_truth'
-    model_param_path='./checkpoints/epoch_354.pth'
+    img_root='/content/drive/My Drive/Thesis/Datasets/archive/ShanghaiTech/part_B/test_data/images'
+    gt_dmap_root='/content/drive/My Drive/Thesis/Datasets/archive/ShanghaiTech/part_B/test_data/images'
+    model_param_path='/content/cvpr2019_CAN_SHHA_353.pth'
     cal_mae(img_root,gt_dmap_root,model_param_path)
     # estimate_density_map(img_root,gt_dmap_root,model_param_path,3) 
